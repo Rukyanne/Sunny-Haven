@@ -1,0 +1,141 @@
+.page-hero {
+    background-color:  #933313;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .logo h1{
+    color:  #933313;
+  }
+  
+  .all-accommodations {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .room-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+  }
+  
+  .room-card img {
+    flex: 1 1 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .room-details {
+    flex: 1 1 400px;
+  }
+  
+  .room-details .tagline {
+    color:  #933313;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .room-specs,
+  .room-features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .room-specs li,
+  .room-features li {
+    background-color: #f5f5f5;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+  
+  .price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+
+  .site-footer {
+    background-color: #933313;
+    color: #f5f5f5;
+    padding: 50px 20px 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 180px;
+  }
+  
+  .footer-col h3,
+  .footer-col h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-col a {
+    color: #f5f5f5;
+    text-decoration: none;
+  }
+  
+  .footer-col a:hover {
+    color: #ff6b35;
+  }
+  
+  .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  a{
+    display: inline-block;
+    margin-right: 10px;
+    padding:10px 15px ;
+    background-color:#933313;
+    border-radius: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border: none;
+   
+  }
+  .book-btn{
+    margin: 10px;
+  }
