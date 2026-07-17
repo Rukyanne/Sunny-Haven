@@ -1,0 +1,45 @@
+:root {
+  --container-width: min(1200px, calc(100% - 2rem));
+}
+
+@media (max-width: 1180px) {
+  .property-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .article-content, .details-hero, .newsletter-wrap, .split-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .nav-links, .nav-actions .icon-btn:not(.menu-toggle) { display: none; }
+  .menu-toggle { display: inline-flex; }
+  .mobile-nav { display: block; position: fixed; inset: 0; background: rgba(16,24,30,0.95); padding: 1.2rem; transform: translateX(100%); transition: transform var(--transition); z-index: 1500; }
+  .mobile-nav.open { transform: translateX(0); }
+  .mobile-nav .panel { display: grid; gap: 0.9rem; padding-top: 3.5rem; }
+  .mobile-nav a { color: var(--surface); font-size: 1.05rem; }
+  .hero-search, .form-grid { grid-template-columns: 1fr; }
+  .hero-card { position: relative; right: auto; bottom: auto; margin-top: 1.5rem; }
+  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .services-grid, .office-grid, .agent-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .section { padding: 4.5rem 0; }
+  .section-header { flex-direction: column; align-items: start; }
+  .property-grid, .blog-grid, .instagram-grid, .stat-block { grid-template-columns: 1fr; }
+  .newsletter-wrap { padding: 1.4rem; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-content { padding-top: 5rem; }
+  .hero-actions { flex-direction: column; align-items: start; }
+  .hero h1 { font-size: 2.35rem; }
+  .page-hero { padding-top: 3.2rem; }
+}
+
+@media (max-width: 480px) {
+  :root { --container-width: min(100% - 1.2rem, 1200px); }
+  .navbar { min-height: 68px; }
+  .hero-search .field, .newsletter-form input, .newsletter-form button { width: 100%; }
+  .newsletter-form { flex-direction: column; }
+  .property-body { padding: 1rem; }
+  .section-title { font-size: 1.5rem; }
+}

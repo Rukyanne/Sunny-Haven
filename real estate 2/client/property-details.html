@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details | Haven Estates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="progress-bar"></div>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-building"></i></span><span>Haven Estates</span></a>
+        <nav aria-label="Primary"><ul class="nav-links"><li><a href="index.html">Home</a></li><li class="dropdown"><a href="properties.html">Properties</a><div class="dropdown-menu"><a href="properties.html">Luxury Homes</a><a href="properties.html">Waterfront</a><a href="properties.html">Penthouse</a></div></li><li><a href="about.html">About</a></li><li><a href="agents.html">Agents</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+        <div class="nav-actions"><button class="icon-btn menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button></div>
+      </div>
+      <div class="mobile-nav" aria-label="Mobile navigation"><div class="container panel"><a href="index.html">Home</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="agents.html">Agents</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div></div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="properties.html">Properties</a><span>/</span><span>Harbor Penthouse</span></nav>
+          <h1>Harbor Penthouse</h1>
+          <p>Private waterfront living with exquisite materials, expansive views, and concierge-level ease.</p>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="details-hero reveal">
+          <div class="hero-image-main">
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" alt="Harbor penthouse exterior" />
+          </div>
+          <div class="info-surface">
+            <div class="section-eyebrow">Listed at</div>
+            <h2 class="section-title">$2.8M</h2>
+            <ul class="detail-list">
+              <li><i class="fa-solid fa-bed"></i> 4 Bedrooms</li>
+              <li><i class="fa-solid fa-bath"></i> 4 Bathrooms</li>
+              <li><i class="fa-solid fa-car"></i> 2-Car Garage</li>
+              <li><i class="fa-solid fa-ruler-combined"></i> 4,800 sq ft</li>
+            </ul>
+            <div class="mt-2"><a class="btn btn-primary" href="#inquiry">Schedule a Visit</a></div>
+          </div>
+        </div>
+        <div class="gallery-thumbs reveal">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=200&q=80" alt="Gallery image" class="active" />
+          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=200&q=80" alt="Gallery image" />
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=200&q=80" alt="Gallery image" />
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="split-grid">
+          <div class="article-card reveal">
+            <div class="section-eyebrow">Property overview</div>
+            <h2 class="section-title">A home that lives beautifully from morning to night</h2>
+            <p>Designed for effortless entertaining and calm everyday living, this penthouse emphasizes indoor-outdoor flow, exceptional natural light, and sculptural finishes throughout.</p>
+            <h3>Features</h3>
+            <div class="property-meta"><span><i class="fa-solid fa-snowflake"></i> Central air</span><span><i class="fa-solid fa-fire"></i> Fireplace</span><span><i class="fa-solid fa-shield"></i> Smart security</span><span><i class="fa-solid fa-wifi"></i> High-speed internet</span></div>
+            <h3>Amenities</h3>
+            <div class="tag-list"><span>Concierge</span><span>Rooftop Terrace</span><span>Wellness Spa</span><span>Wine Cellar</span><span>Private Dock</span></div>
+          </div>
+          <div class="info-surface reveal">
+            <h3>Location</h3>
+            <p>Marina District, overlooking the waterfront and close to boutiques, dining, and private yacht services.</p>
+            <div class="map-card">Map placeholder</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="property-grid">
+          <article class="mortgage-card reveal">
+            <h3>Mortgage calculator</h3>
+            <div class="field"><label for="home-price">Home price</label><input id="home-price" type="number" value="2800000" /></div>
+            <div class="form-grid mt-2"><div class="field"><label for="down-payment">Down payment</label><input id="down-payment" type="number" value="20" /></div><div class="field"><label for="interest-rate">Interest rate</label><input id="interest-rate" type="number" value="6.5" /></div></div>
+            <button class="btn btn-primary mt-2" type="button">Estimate payment</button>
+            <div class="result">Estimated monthly payment: $17,000</div>
+          </article>
+          <article class="contact-card reveal" id="inquiry">
+            <h3>Schedule a visit</h3>
+            <form class="form-grid">
+              <div class="field"><label for="name">Name</label><input id="name" type="text" /></div>
+              <div class="field"><label for="email">Email</label><input id="email" type="email" /></div>
+              <div class="field"><label for="date">Preferred date</label><input id="date" type="date" /></div>
+              <div class="field"><label for="time">Time</label><input id="time" type="time" /></div>
+              <div class="field" style="grid-column: 1 / -1;"><label for="message">Message</label><textarea id="message"></textarea></div>
+            </form>
+            <button class="btn btn-primary mt-2" type="submit">Request tour</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-sm" style="background: var(--section-bg);">
+        <div class="container">
+          <div class="section-header reveal">
+            <div><div class="section-eyebrow">Related homes</div><h2 class="section-title">More residences that echo the same spirit</h2></div>
+          </div>
+          <div class="property-grid">
+            <article class="property-card reveal"><div class="property-media"><img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=900&q=80" alt="Residence" loading="lazy" /></div><div class="property-body"><strong>$3.4M</strong><h3>North Ridge Residence</h3><p>Private terraces and a striking architectural silhouette.</p><a class="btn btn-secondary" href="property-details.html">View Details</a></div></article>
+            <article class="property-card reveal"><div class="property-media"><img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80" alt="Residence" loading="lazy" /></div><div class="property-body"><strong>$3.9M</strong><h3>Lakeside Estate</h3><p>Modern comfort and a quiet retreat beyond the city.</p><a class="btn btn-secondary" href="property-details.html">View Details</a></div></article>
+            <article class="property-card reveal"><div class="property-media"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Residence" loading="lazy" /></div><div class="property-body"><strong>$2.1M</strong><h3>Skyline Loft</h3><p>Thoughtful proportions and a dynamic city outlook.</p><a class="btn btn-secondary" href="property-details.html">View Details</a></div></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-building"></i></span><span>Haven Estates</span></a><p class="mt-2">A premium real estate advisory firm delivering exceptional homes, investment guidance, and elevated service.</p></div><div><h3>Quick links</h3><ul><li><a href="properties.html">Properties</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h3>Properties</h3><ul><li><a href="properties.html">Luxury Villas</a></li><li><a href="properties.html">Waterfront</a></li><li><a href="properties.html">Penthouse</a></li><li><a href="properties.html">Townhomes</a></li></ul></div><div><h3>Newsletter</h3><p>Receive tailored listings and market updates.</p><form class="newsletter-form mt-2"><input type="email" placeholder="Email address" /><button class="btn btn-secondary" type="submit">Join</button></form></div></div><div class="container footer-bottom"><span>© 2026 Haven Estates. All rights reserved.</span><a href="#top" class="btn btn-secondary">Back to top</a></div></footer>
+
+    <a class="back-to-top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="js/main.js"></script><script src="js/navigation.js"></script><script src="js/animations.js"></script>
+  </body>
+</html>

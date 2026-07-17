@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A premium real estate experience for refined living, strategic investment, and exceptional service." />
+    <title>Haven Estates | Luxury Real Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="progress-bar"></div>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><i class="fa-solid fa-building"></i></span>
+          <span>Haven Estates</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav-links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="properties.html">Properties</a>
+              <div class="dropdown-menu">
+                <a href="properties.html">Luxury Homes</a>
+                <a href="properties.html">Waterfront</a>
+                <a href="properties.html">Penthouse</a>
+              </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a class="icon-btn" href="properties.html" aria-label="Search listings"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button class="icon-btn menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+      <div class="mobile-nav" aria-label="Mobile navigation">
+        <div class="container panel">
+          <a href="index.html">Home</a>
+          <a href="properties.html">Properties</a>
+          <a href="about.html">About</a>
+          <a href="agents.html">Agents</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content reveal">
+            <div class="hero-kicker"><i class="fa-solid fa-award"></i> Curated real estate, reimagined</div>
+            <h1>Find a residence that feels like your legacy.</h1>
+            <p>Discover architectural masterpieces, private neighborhoods, and unmatched guidance tailored to modern luxury living.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="properties.html">Explore Listings</a>
+              <a class="btn btn-ghost" href="about.html">Our Approach</a>
+            </div>
+            <form class="hero-search" aria-label="Property search">
+              <div class="field">
+                <label class="sr-only" for="location">Location</label>
+                <input id="location" type="text" placeholder="Location" data-search-input />
+              </div>
+              <div class="field">
+                <label class="sr-only" for="property-type">Property Type</label>
+                <select id="property-type">
+                  <option>Any Type</option>
+                  <option>Villa</option>
+                  <option>Penthouse</option>
+                  <option>Townhouse</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="sr-only" for="budget">Budget</label>
+                <select id="budget">
+                  <option>Budget</option>
+                  <option>$1M+</option>
+                  <option>$2M+</option>
+                  <option>$5M+</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" type="submit"><i class="fa-solid fa-search"></i> Search</button>
+            </form>
+          </div>
+          <aside class="hero-card reveal" aria-label="Featured neighborhood">
+            <h3>Bel Air Collection</h3>
+            <p>Private courtyards, panoramic views, and concierge services designed for elevated living.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-eyebrow">Featured residences</div>
+            <h2 class="section-title">Selected homes with unmistakable presence</h2>
+          </div>
+          <a class="btn btn-secondary" href="properties.html">View all properties</a>
+        </div>
+        <div class="property-grid">
+          <article class="property-card reveal" data-search-text="harbor penthouse">
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Modern coastal penthouse" loading="lazy" />
+              <span class="property-badge">Featured</span>
+              <button class="favorite-btn" aria-label="Save property"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="property-body">
+              <div class="property-price">
+                <strong>$2.8M</strong>
+                <span class="section-eyebrow">Penthouse</span>
+              </div>
+              <h3>Harbor Penthouse</h3>
+              <p>Panoramic waterfront views with sculptural interiors and resort amenities.</p>
+              <div class="property-meta">
+                <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 4 Baths</span>
+                <span><i class="fa-solid fa-car"></i> 2 Garage</span>
+                <span><i class="fa-solid fa-ruler-combined"></i> 4,800 sqft</span>
+              </div>
+              <div class="card-footer">
+                <span>Marina District</span>
+                <a class="btn btn-secondary" href="property-details.html">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="property-card reveal" data-search-text="garden villa">
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80" alt="Contemporary garden villa" loading="lazy" />
+              <span class="property-badge">New</span>
+              <button class="favorite-btn" aria-label="Save property"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="property-body">
+              <div class="property-price">
+                <strong>$3.4M</strong>
+                <span class="section-eyebrow">Villa</span>
+              </div>
+              <h3>Garden Estate Villa</h3>
+              <p>Immersive indoor-outdoor living framed by mature landscaping and privacy.</p>
+              <div class="property-meta">
+                <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+                <span><i class="fa-solid fa-car"></i> 3 Garage</span>
+                <span><i class="fa-solid fa-ruler-combined"></i> 6,150 sqft</span>
+              </div>
+              <div class="card-footer">
+                <span>North Ridge</span>
+                <a class="btn btn-secondary" href="property-details.html">View Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="property-card reveal" data-search-text="city residence">
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=900&q=80" alt="Urban residence interior" loading="lazy" />
+              <span class="property-badge">Exclusive</span>
+              <button class="favorite-btn" aria-label="Save property"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="property-body">
+              <div class="property-price">
+                <strong>$1.95M</strong>
+                <span class="section-eyebrow">Residence</span>
+              </div>
+              <h3>City Residence</h3>
+              <p>Crafted for effortless entertaining with a private terrace and concierge service.</p>
+              <div class="property-meta">
+                <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                <span><i class="fa-solid fa-car"></i> 2 Garage</span>
+                <span><i class="fa-solid fa-ruler-combined"></i> 3,600 sqft</span>
+              </div>
+              <div class="card-footer">
+                <span>Downtown</span>
+                <a class="btn btn-secondary" href="property-details.html">View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-sm" style="background: var(--section-bg);">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-eyebrow">Curated communities</div>
+              <h2 class="section-title">Neighborhoods that define the next era of living</h2>
+            </div>
+          </div>
+          <div class="category-grid">
+            <article class="category-card reveal"><h3>Oceanfront</h3><p>Elevated homes with private docks and timeless coastal views.</p></article>
+            <article class="category-card reveal"><h3>Historic Core</h3><p>Restored estates and architectural landmarks with cultural depth.</p></article>
+            <article class="category-card reveal"><h3>Skyline</h3><p>High-rise residences with panoramic vistas and concierge access.</p></article>
+            <article class="category-card reveal"><h3>Private Estate</h3><p>Tranquil compounds and gated retreats designed for privacy.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="split-grid">
+          <div class="reveal">
+            <div class="section-eyebrow">Why Haven</div>
+            <h2 class="section-title">A luxury experience grounded in precision and trust</h2>
+            <p class="section-copy">From private tours and acquisition strategy to market intelligence and seamless transitions, every step is guided by discretion, insight, and unparalleled care.</p>
+            <div class="stat-block">
+              <div class="stat-card"><strong data-counter="97">0</strong><span>% client satisfaction</span></div>
+              <div class="stat-card"><strong data-counter="24">0</strong><span>years of expertise</span></div>
+              <div class="stat-card"><strong data-counter="320">0</strong><span>exclusive listings</span></div>
+              <div class="stat-card"><strong data-counter="18">0</strong><span>global offices</span></div>
+            </div>
+          </div>
+          <div class="info-surface reveal">
+            <h3>What sets us apart</h3>
+            <ul class="detail-list">
+              <li><i class="fa-solid fa-check"></i> Bespoke buying and selling strategy</li>
+              <li><i class="fa-solid fa-check"></i> Off-market access for select clientele</li>
+              <li><i class="fa-solid fa-check"></i> Concierge relocation and design support</li>
+              <li><i class="fa-solid fa-check"></i> A trusted network of architects and advisors</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-sm" style="background: var(--section-bg);">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-eyebrow">Meet the advisors</div>
+              <h2 class="section-title">A remarkable team, committed to your vision</h2>
+            </div>
+            <a class="btn btn-secondary" href="agents.html">View all agents</a>
+          </div>
+          <div class="agent-grid">
+            <article class="agent-card reveal">
+              <h3>Elena Mercer</h3>
+              <p>Senior Advisor</p>
+              <p>Specializes in waterfront estates and private retreats.</p>
+              <div class="d-flex gap-sm mt-2"><a href="mailto:elena@Havenestates.com"><i class="fa-solid fa-envelope"></i></a><a href="tel:+12125550109"><i class="fa-solid fa-phone"></i></a></div>
+            </article>
+            <article class="agent-card reveal">
+              <h3>Noah Grant</h3>
+              <p>Luxury Investment Director</p>
+              <p>Known for strategic acquisitions and highly curated portfolios.</p>
+              <div class="d-flex gap-sm mt-2"><a href="mailto:noah@Havenestates.com"><i class="fa-solid fa-envelope"></i></a><a href="tel:+12125550108"><i class="fa-solid fa-phone"></i></a></div>
+            </article>
+            <article class="agent-card reveal">
+              <h3>Mina Alvarez</h3>
+              <p>Relocation Specialist</p>
+              <p>Guides international clients through seamless transitions.</p>
+              <div class="d-flex gap-sm mt-2"><a href="mailto:mina@Havenestates.com"><i class="fa-solid fa-envelope"></i></a><a href="tel:+12125550107"><i class="fa-solid fa-phone"></i></a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-eyebrow">Client voices</div>
+            <h2 class="section-title">Testimonials that speak to the standard</h2>
+          </div>
+        </div>
+        <div class="property-grid">
+          <article class="testimonial-card reveal">
+            <p class="quote">“They understood our vision immediately and brought us to a home that feels like it was made for us.”</p>
+            <div class="testimonial-meta"><strong>Amelia & Julien</strong><img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Client portrait" /></div>
+          </article>
+          <article class="testimonial-card reveal">
+            <p class="quote">“The level of discretion, preparation, and insight was extraordinary from the first meeting onward.”</p>
+            <div class="testimonial-meta"><strong>Rafael M.</strong><img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Client portrait" /></div>
+          </article>
+          <article class="testimonial-card reveal">
+            <p class="quote">“Every detail felt considered. We felt calm, informed, and deeply confident throughout.”</p>
+            <div class="testimonial-meta"><strong>Nadia S.</strong><img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Client portrait" /></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="newsletter-wrap reveal">
+          <div>
+            <div class="section-eyebrow">Stay informed</div>
+            <h2 class="section-title">Receive private listings and market insights.</h2>
+            <p>Join our preferred client list for first access to rare opportunities.</p>
+          </div>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <input type="email" placeholder="Email address" />
+            <button class="btn btn-secondary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-eyebrow">From our gallery</div>
+            <h2 class="section-title">A closer look at the lifestyle we curate</h2>
+          </div>
+        </div>
+        <div class="instagram-grid">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=500&q=80" alt="Luxury interior" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80" alt="Architectural exterior" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=500&q=80" alt="Bright living room" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=500&q=80" alt="Poolside retreat" loading="lazy" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-building"></i></span><span>Haven Estates</span></a>
+          <p class="mt-2">A premium real estate advisory firm delivering exceptional homes, investment guidance, and elevated service.</p>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Properties</h3>
+          <ul>
+            <li><a href="properties.html">Luxury Villas</a></li>
+            <li><a href="properties.html">Waterfront</a></li>
+            <li><a href="properties.html">Penthouse</a></li>
+            <li><a href="properties.html">Townhomes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <p>Receive tailored listings and market updates.</p>
+          <form class="newsletter-form mt-2">
+            <input type="email" placeholder="Email address" />
+            <button class="btn btn-secondary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Haven Estates. All rights reserved.</span>
+        <a href="#top" class="btn btn-secondary">Back to top</a>
+      </div>
+    </footer>
+
+    <a class="back-to-top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    <div class="floating-contact"><a href="contact.html"><i class="fa-solid fa-comments"></i> Contact</a></div>
+
+    <div class="cookie-banner">
+      <strong>We use cookies</strong>
+      <p>To improve your experience and personalize content, we use cookies.</p>
+      <div class="actions">
+        <button class="btn btn-secondary">Accept</button>
+        <button class="btn btn-primary">Decline</button>
+      </div>
+    </div>
+
+    <div class="newsletter-popup">
+      <div class="popup-card">
+        <button class="icon-btn close-popup" aria-label="Close popup"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Private market access</h3>
+        <p>Be the first to receive extraordinary opportunities and exceptional insights.</p>
+        <form class="newsletter-form mt-2">
+          <input type="email" placeholder="Email address" />
+          <button class="btn btn-primary" type="submit">Notify me</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="icon-btn close-modal" aria-label="Close gallery"><i class="fa-solid fa-xmark"></i></button>
+        <img src="" alt="Property gallery" />
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/counters.js"></script>
+  </body>
+</html>

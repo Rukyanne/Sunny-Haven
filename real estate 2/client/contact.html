@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Haven Estates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="progress-bar"></div>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-building"></i></span><span>Haven Estates</span></a>
+        <nav aria-label="Primary"><ul class="nav-links"><li><a href="index.html">Home</a></li><li class="dropdown"><a href="properties.html">Properties</a><div class="dropdown-menu"><a href="properties.html">Luxury Homes</a><a href="properties.html">Waterfront</a><a href="properties.html">Penthouse</a></div></li><li><a href="about.html">About</a></li><li><a href="agents.html">Agents</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li><li><a class="active" href="contact.html">Contact</a></li></ul></nav>
+        <div class="nav-actions"><button class="icon-btn menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button></div>
+      </div>
+      <div class="mobile-nav" aria-label="Mobile navigation"><div class="container panel"><a href="index.html">Home</a><a href="properties.html">Properties</a><a href="about.html">About</a><a href="agents.html">Agents</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div></div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
+          <h1>Let’s begin with a private conversation.</h1>
+          <p>Whether you’re buying, selling, or simply exploring the market, our team is ready to guide you.</p>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="split-grid">
+          <div class="info-surface reveal">
+            <h3>Visit our office</h3>
+            <div class="office-grid">
+              <div class="office-card"><h4>New York</h4><p>88 Mercer Street<br />Suite 1400<br />New York, NY</p></div>
+              <div class="office-card"><h4>Miami</h4><p>422 Collins Avenue<br />Suite 300<br />Miami Beach, FL</p></div>
+            </div>
+            <div class="mt-3"><h3>Business hours</h3><p>Monday–Friday: 9am–7pm<br />Saturday: 10am–4pm</p></div>
+          </div>
+          <div class="contact-card reveal">
+            <h3>Contact form</h3>
+            <form class="form-grid">
+              <div class="field"><label for="contact-name">Name</label><input id="contact-name" type="text" /></div>
+              <div class="field"><label for="contact-email">Email</label><input id="contact-email" type="email" /></div>
+              <div class="field" style="grid-column: 1 / -1;"><label for="contact-message">Message</label><textarea id="contact-message"></textarea></div>
+            </form>
+            <button class="btn btn-primary mt-2" type="submit">Send inquiry</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="info-surface reveal">
+          <h3>Frequently asked questions</h3>
+          <div class="accordion-item open"><button class="accordion-header">What services do you offer?<i class="fa-solid fa-plus"></i></button><div class="accordion-content"><p>We advise on buying, selling, investment, relocation, and private acquisition strategy.</p></div></div>
+          <div class="accordion-item"><button class="accordion-header">Do you work with international clients?<i class="fa-solid fa-plus"></i></button><div class="accordion-content"><p>Yes. We regularly assist domestic and international clients with tailored support.</p></div></div>
+          <div class="accordion-item"><button class="accordion-header">Can I book a private tour?<i class="fa-solid fa-plus"></i></button><div class="accordion-content"><p>Absolutely. We coordinate private viewings and custom schedules for select homes.</p></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark"><i class="fa-solid fa-building"></i></span><span>Haven Estates</span></a><p class="mt-2">A premium real estate advisory firm delivering exceptional homes, investment guidance, and elevated service.</p></div><div><h3>Quick links</h3><ul><li><a href="properties.html">Properties</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h3>Properties</h3><ul><li><a href="properties.html">Luxury Villas</a></li><li><a href="properties.html">Waterfront</a></li><li><a href="properties.html">Penthouse</a></li><li><a href="properties.html">Townhomes</a></li></ul></div><div><h3>Newsletter</h3><p>Receive tailored listings and market updates.</p><form class="newsletter-form mt-2"><input type="email" placeholder="Email address" /><button class="btn btn-secondary" type="submit">Join</button></form></div></div><div class="container footer-bottom"><span>© 2026 Haven Estates. All rights reserved.</span><a href="#top" class="btn btn-secondary">Back to top</a></div></footer>
+
+    <a class="back-to-top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="js/main.js"></script><script src="js/navigation.js"></script><script src="js/animations.js"></script>
+  </body>
+</html>
